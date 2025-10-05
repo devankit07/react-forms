@@ -1,18 +1,26 @@
 import React, { useRef } from 'react'
 
 const Uncontrol = () => {
-  const refObject = useRef();
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(refObject.current.value); 
+    console.log(e.current.value); 
+
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" ref={refObject} />
+        <input type="text"/>
+      
         <label> Firstname </label>
+        <input type="name" />
+      
+        <label> email </label>
+        <input type="email" />
+      
+        <label> phone </label>
+        <input type="phone" />
         <button type="submit">Submit</button>
       </form>
     </div>
