@@ -33,7 +33,7 @@ const App = () => {
           onChange={handleChange}
         />
         <br />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password name </label>
       </form>
       <br />
       <p>Name: {name}</p>
